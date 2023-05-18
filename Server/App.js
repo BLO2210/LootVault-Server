@@ -132,9 +132,7 @@ app.put(`/users/:userId/movies/:movieId`, async (req, res) => {
     res.status(500).send("Server Error")
   }
 })
-
-
-
+//
 app.get('/users/:userId/movies', async (req, res) => {
   try {
     const userId = req.params.userId
